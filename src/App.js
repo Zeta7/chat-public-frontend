@@ -6,7 +6,7 @@ import ChatContainer from './components/ChatContainer';
 import MessageInput from './components/MessageInput';
 import ReplyContainer from './components/ReplyContainer';
 
-const socket = io('https://chat-public-backend.onrender.com:3001', { transports: ['websocket'] });
+const socket = io('https://chat-public-backend.onrender.com', { transports: ['websocket'] });
 
 function App() {
   const [messages, setMessages] = useState([]);
